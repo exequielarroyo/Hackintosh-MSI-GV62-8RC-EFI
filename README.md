@@ -1,0 +1,1 @@
+# MSI-GV62-8RC-EFI
