@@ -315,16 +315,24 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AACbPg==</data>
-				<key>framebuffer-patch-enable	</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>enable-backlight-register-fix</key>
-				<data>AQAAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
+				<key>enable-backlight-register-fix</key>
+				<data>AQAAAA==</data>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQAJAAAIAACHAQAA</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-alldata</key>
+				<data>AgIKAAAIAACHAQAA</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
@@ -1251,6 +1259,8 @@
 			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>60</integer>
+			<key>InstanceIdentifier</key>
+			<string></string>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1379,7 +1389,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 debug=0x100 alcid=4 -wegnoegpu -igfxblr -igfxblt igfxonln=1</string>
+				<string>keepsyms=1 debug=0x100 alcid=4 -wegnoegpu -igfxblr -igfxblt igfxonln=1 agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1759,6 +1769,8 @@
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
+			<false/>
+			<key>ShimRetainProtocol</key>
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
